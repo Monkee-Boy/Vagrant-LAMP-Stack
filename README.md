@@ -1,7 +1,10 @@
 # Vagrant LAMP stack
-A dead-simple LAMP stack without any bells and whistles for your basic Linux/Apache/MySQL/PHP install, using Chef Solo for provisioning.
+
+A Monkee-Boy flavored Vagrant LAMP stack for your basic Linux/Apache/MySQL/PHP install, using Chef Solo for provisioning. 
 
 The idea is for developers to fork this and add additional software and configuration that suits the needs of their project.
+
+Original stack from [MiniCodeMonkey](https://github.com/MiniCodeMonkey/Vagrant-LAMP-Stack).
 
 ## Requirements
 * [VirtualBox](https://www.virtualbox.org)
@@ -20,7 +23,7 @@ The idea is for developers to fork this and add additional software and configur
 ## Installation
 Clone this repository
 
-    $ git clone git@github.com:MiniCodeMonkey/Vagrant-LAMP-Stack.git
+    $ git clone git@github.com:Monkee-Boy/Vagrant-LAMP-Stack.git
 
 Place your website in the `public_html` folder
 
@@ -30,7 +33,7 @@ Start the VM
 	$ cd Vagrant-LAMP-Stack
 	$ vagrant up
 
-You can now access your project at [http://projectname.local](http://projectname.local)
+You can now access your project at [http://projectname.dev](http://projectname.dev)
 
 ![Screenshot of up-and-running server](http://i.imgur.com/TP1i9Zd.png)
 
@@ -54,11 +57,7 @@ If you are using the default configuration, just create a `dump.sql` file in the
 * Host: localhost
 * Port: 3306
 
-**Note:** Remote MySQL access is enabled by default, so you can access the MySQL database using your favorite MySQL client with the above credentials (and using e.g. *projectname.local* as hostname).
+**Note:** Remote MySQL access is enabled by default, so you can access the MySQL database using your favorite MySQL client with the above credentials (and using e.g. *projectname.dev* as hostname).
 
 ### Memcached
 * Port: 11211
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MiniCodeMonkey/vagrant-lamp-stack/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
